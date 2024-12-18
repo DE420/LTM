@@ -1,0 +1,15 @@
+manifest.mf
+build.xml
+catalog.xml
+xml-resource/
+test/
+nbproject/
+dist/
+build/
+src/client/
+src/http/
+src/META-INF/
+src/nic_multicast/
+src/rmi_remote/
+src/server/
+src/thread/
