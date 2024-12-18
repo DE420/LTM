@@ -19,6 +19,17 @@ import java.util.Map;
  *
  * @author Admin
  */
+
+/*[Mã câu hỏi (qCode): EUN1CzrZ].  Một chương trình server cho phép kết nối qua giao thức UDP tại cổng 2208. Yêu cầu là xây dựng một chương trình client tương tác với server kịch bản dưới đây:
+a.	Gửi thông điệp là một chuỗi chứa mã sinh viên và mã câu hỏi theo định dạng “;studentCode;qCode”. Ví dụ: “;B15DCCN001;EE29C059”
+b.	Nhận thông điệp từ server theo định dạng “requestId; data” 
+-	requestId là một chuỗi ngẫu nhiên duy nhất
+-	data là chuỗi dữ liệu đầu vào cần xử lý
+Ex: “requestId;Qnc8d5x78aldSGWWmaAAjyg3”
+c.	Tìm kiếm ký tự xuất hiện nhiều nhất trong chuỗi và gửi lên server theo định dạng “requestId;ký tự xuất hiện nhiều nhất: các vị trí xuất hiện ký tự đó” 
+ví dụ: “requestId;8:4,9,”
+d.	Đóng socket và kết thúc chương trình*/
+
 public class UDP_String_KyTuXuatHienNhieuNhat {
     public static void main(String[] args) throws SocketException, UnknownHostException, IOException {
         DatagramSocket client = new DatagramSocket();
